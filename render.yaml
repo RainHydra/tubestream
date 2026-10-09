@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: yt-downloader-app
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    branch: main
+    healthCheckPath: /api/health
+    autoDeploy: true
